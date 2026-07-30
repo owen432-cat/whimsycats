@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Whiskers & Witchcraft | The Stories of Mr. Handsom, Jackie & Tennessee</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+--background:#F8F3E8;
+--card:#FFFDF8;
+--primary:#4C355E;
+--accent:#D8B25A;
+--sage:#7C9A74;
+--text:#46392F;
+--shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--background);
+color:var(--text);
+line-height:1.8;
+
+}
+
+h1,h2,h3{
+
+font-family:'Cinzel',serif;
+letter-spacing:1px;
+
+}
+
+.quote{
+
+font-family:'Cormorant Garamond',serif;
+font-size:1.4rem;
+font-style:italic;
+
+}
+
+img{
+
+max-width:100%;
+display:block;
+
+}
+
+section{
+
+padding:90px 10%;
+
+}
+
+.container{
+
+max-width:1200px;
+margin:auto;
+
+}
+
+/* ---------------------- */
+/* Navigation */
+/* ---------------------- */
+
+nav{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:35px;
+padding:20px;
+background:rgba(76,53,94,.95);
+backdrop-filter:blur(8px);
+z-index:999;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:var(--accent);
+
+}
+
+/* ---------------------- */
+/* Hero */
+/* ---------------------- */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(35,20,40,.45),
+rgba(35,20,40,.55)),
+url("images/hero.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+color:white;
+
+}
+
+.hero-content{
+
+max-width:800px;
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:4rem;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:1.3rem;
+
+margin-bottom:40px;
+
+}
+
+.button{
+
+display:inline-block;
+padding:15px 35px;
+background:var(--accent);
+color:#222;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.35s;
+
+}
+
+.button:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* ---------------------- */
+/* Section Title */
+/* ---------------------- */
+
+.section-title{
+
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+font-size:2.6rem;
+color:var(--primary);
+
+}
+
+.section-title p{
+
+font-family:'Cormorant Garamond',serif;
+font-size:1.3rem;
+margin-top:15px;
+
+}
+
+/* ---------------------- */
+/* Profile Cards */
+/* ---------------------- */
+
+.cat-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+
+}
+
+.cat-card{
+
+background:var(--card);
+border-radius:20px;
+overflow:hidden;
+box-shadow:var(--shadow);
+transition:.35s;
+
+}
+
+.cat-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.cat-card img{
+
+height:350px;
+width:100%;
+object-fit:cover;
+
+}
+
+.cat-info{
+
+padding:30px;
+
+}
+
+.cat-info h3{
+
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.cat-info ul{
+
+margin-top:20px;
+padding-left:20px;
+
+}
+
+/* More styles continue in Chunk 2 */
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#cats">Meet the Family</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#history">Cats & Witchcraft</a>
+
+<a href="#love">Why I Love Them</a>
+
+</nav>
+
+<header class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Whiskers & Witchcraft</h1>
+
+<p class="quote">
+
+"For centuries, cats have inspired myths, guarded homes, and captured hearts.
+Some called them magical. I simply call them family."
+
+</p>
+
+<a href="#cats" class="button">
+
+Meet My Cats
+
+</a>
+
+</div>
+
+</header>
+/* ---------------------- */
+/* Gallery */
+/* ---------------------- */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    background:var(--card);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-8px);
+}
+
+.gallery-item img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+}
+
+.gallery-caption{
+    padding:20px;
+}
+
+.gallery-caption h4{
+    color:var(--primary);
+    margin-bottom:8px;
+    font-size:1.1rem;
+}
+
+/* ---------------------- */
+/* History Section */
+/* ---------------------- */
+
+.history{
+    background:#f1eadb;
+}
+
+.timeline{
+    display:grid;
+    gap:30px;
+}
+
+.timeline-item{
+    background:white;
+    padding:30px;
+    border-left:6px solid var(--accent);
+    border-radius:15px;
+    box-shadow:var(--shadow);
+}
+
+.timeline-item h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+/* ---------------------- */
+/* Why I Love Them */
+/* ---------------------- */
+
+.love{
+    text-align:center;
+}
+
+.love-card{
+    background:var(--card);
+    max-width:900px;
+    margin:auto;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.love-card p{
+    margin-bottom:25px;
+    font-size:1.1rem;
+}
+
+/* ---------------------- */
+/* Footer */
+/* ---------------------- */
+
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+footer .quote{
+    font-size:1.5rem;
+}
+
+/* ---------------------- */
+/* Fade Animation */
+/* ---------------------- */
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ---------------------- */
+/* Responsive */
+/* ---------------------- */
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.hero p{
+    font-size:1.1rem;
+}
+
+nav{
+    gap:15px;
+    flex-wrap:wrap;
+    padding:15px;
+}
+
+section{
+    padding:70px 6%;
+}
+
+.cat-card img{
+    height:280px;
+}
+
+.gallery-item img{
+    height:220px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.button{
+    padding:12px 24px;
+}
+
+.section-title h2{
+    font-size:2rem;
+}
+
+.love-card{
+    padding:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#cats">Meet the Family</a>
+<a href="#gallery">Gallery</a>
+<a href="#history">Cats & Witchcraft</a>
+<a href="#love">Why I Love Them</a>
+
+</nav>
+
+<header class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Whiskers & Witchcraft</h1>
+
+<p class="quote">
+"For centuries, cats have inspired myths, guarded homes, and captured hearts.
+Some called them magical. I simply call them family."
+</p>
+
+<a href="#cats" class="button">
+Meet My Cats
+</a>
+
+</div>
+
+</header>
+<!-- ========================================= -->
+<!-- Meet the Family -->
+<!-- ========================================= -->
+
+<section id="cats" class="fade">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🐾 Meet the Family</h2>
+
+<p>
+Three unique personalities. Three loyal companions.
+One home filled with love, laughter, and just a little bit of magic.
+</p>
+
+</div>
+
+<div class="cat-grid">
+
+    <!-- Mr. Handsom -->
+
+    <div class="cat-card">
+
+        <img src="images/mrhandsom.jpg"
+             alt="Mr. Handsom relaxing">
+
+        <div class="cat-info">
+
+            <h3>🩶 Mr. Handsom</h3>
+
+            <p>
+
+                Mr. Handsom is the wise gentleman of the family.
+                With his beautiful gray tabby coat and calm personality,
+                he always seems to know exactly what's going on around him.
+
+            </p>
+
+            <p>
+
+                Whether he's quietly watching from across the room,
+                relaxing in a favorite spot,
+                or simply enjoying a peaceful afternoon,
+                he brings comfort wherever he goes.
+
+            </p>
+
+            <ul>
+
+                <li>🐾 Professional sunbeam napper</li>
+                <li>📚 Quiet observer</li>
+                <li>❤️ Gentle companion</li>
+                <li>👑 Always living up to his name</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Jackie -->
+
+    <div class="cat-card">
+
+        <img src="images/jackie.jpg"
+             alt="Jackie the tuxedo cat">
+
+        <div class="cat-info">
+
+            <h3>🖤 Jackie</h3>
+
+            <p>
+
+                Jackie is full of personality.
+                Whether she's asking for belly rubs,
+                climbing into cardboard boxes,
+                or finding the funniest place to relax,
+                she never fails to make everyone smile.
+
+            </p>
+
+            <p>
+
+                She has a playful spirit,
+                endless curiosity,
+                and somehow manages to turn ordinary moments
+                into unforgettable memories.
+
+            </p>
+
+            <ul>
+
+                <li>❤️ Belly rub enthusiast</li>
+                <li>📦 Box inspector</li>
+                <li>😹 Queen of silly poses</li>
+                <li>🐾 Certified attention seeker</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Tennessee -->
+
+    <div class="cat-card">
+
+        <img src="images/tennessee.jpg"
+             alt="Tennessee relaxing">
+
+        <div class="cat-info">
+
+            <h3>🤍 Tennessee</h3>
+
+            <p>
+
+                Tennessee is the quiet heart of the family.
+                With a gentle gray-and-white coat and a peaceful nature,
+                Tennessee reminds me that companionship doesn't always
+                need words.
+
+            </p>
+
+            <p>
+
+                A quiet nap nearby,
+                a curious glance,
+                or simply following me from room to room
+                is enough to brighten my day.
+
+            </p>
+
+            <ul>
+
+                <li>🌙 Calm soul</li>
+                <li>☀️ Sunshine lover</li>
+                <li>🐾 Faithful companion</li>
+                <li>❤️ Master of cozy afternoons</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- Transition Quote -->
+<!-- ========================================= -->
+
+<section class="fade">
+
+<div class="container">
+
+<div class="love-card">
+
+<p class="quote">
+
+"Every cat has a story to tell.
+Mine have simply chosen to write theirs
+across my heart."
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ========================================= -->
+<!-- A Day in Their Lives -->
+<!-- ========================================= -->
+
+<section id="gallery" class="fade">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>📸 A Day in Their Lives</h2>
+
+<p>
+Every photograph captures a little piece of life with Mr. Handsom,
+Jackie, and Tennessee. From playful moments to peaceful naps,
+these are the memories that make every day special.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery1.jpg" alt="Jackie asking for belly rubs">
+
+<div class="gallery-caption">
+
+<h4>❤️ Trust</h4>
+
+<p>
+A cat only rolls onto their back for someone they truly trust.
+Moments like these remind me just how special that bond is.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery2.jpg" alt="Jackie in a cardboard box">
+
+<div class="gallery-caption">
+
+<h4>📦 The Royal Box</h4>
+
+<p>
+Every cardboard box immediately becomes a castle, a hiding place,
+or the perfect throne for afternoon naps.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery3.jpg" alt="Mr. Handsom relaxing">
+
+<div class="gallery-caption">
+
+<h4>☀️ Peaceful Moments</h4>
+
+<p>
+Some of the best memories aren't exciting at all—
+just enjoying the quiet company of a cat nearby.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery4.jpg" alt="Cat with television remote">
+
+<div class="gallery-caption">
+
+<h4>📺 Keeper of the Remote</h4>
+
+<p>
+No movie starts without a thorough feline inspection.
+Apparently every remote requires official approval.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery5.jpg" alt="Cat reading a book">
+
+<div class="gallery-caption">
+
+<h4>📚 Reading Buddy</h4>
+
+<p>
+Reading is never a solitary activity.
+Someone always insists on helping with the next chapter.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery6.jpg" alt="Cat peeking around the corner">
+
+<div class="gallery-caption">
+
+<h4>👀 Curiosity</h4>
+
+<p>
+Cats have an incredible curiosity.
+Every doorway hides another adventure waiting to be explored.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery7.jpg" alt="Cat sitting in a funny position">
+
+<div class="gallery-caption">
+
+<h4>😹 Everyday Comedy</h4>
+
+<p>
+Cats somehow manage to look graceful one moment
+and absolutely hilarious the next.
+That's part of why I love them.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery8.jpg" alt="Sleeping cat">
+
+<div class="gallery-caption">
+
+<h4>😴 Sweet Dreams</h4>
+
+<p>
+Whether curled into a tiny ball or stretched across the couch,
+cats remind us that rest is something to be enjoyed.
+</p>
+
+</div>
+
+</div>
+
+<!-- Gallery Item -->
+
+<div class="gallery-item">
+
+<img src="images/gallery9.jpg" alt="Mr. Handsom or Tennessee relaxing">
+
+<div class="gallery-caption">
+
+<h4>🐾 Home</h4>
+
+<p>
+Home isn't defined by the furniture or the walls.
+It's the love shared with those waiting there for you.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- Gallery Quote -->
+<!-- ========================================= -->
+
+<section class="fade">
+
+<div class="container">
+
+<div class="love-card">
+
+<p class="quote">
+
+"Every paw print tells a story.
+Every purr becomes a memory.
+Every day with a cat is a gift."
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ========================================= -->
+<!-- Cats & Witchcraft -->
+<!-- ========================================= -->
+
+<section id="history" class="history fade">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🔮 Cats & Witchcraft</h2>
+
+<p>
+For thousands of years, cats have inspired stories, legends,
+and beliefs that continue to fascinate people today.
+While many of these tales belong to folklore rather than history,
+they reveal how deeply humans have admired these remarkable animals.
+</p>
+
+</div>
+
+<div class="timeline">
+
+<!-- Ancient Egypt -->
+
+<div class="timeline-item">
+
+<h3>🏺 Ancient Egypt</h3>
+
+<p>
+
+Long before cats became associated with witchcraft,
+they were honored in Ancient Egypt.
+Cats protected grain stores from rodents and snakes,
+making them valuable companions.
+
+They were admired for their grace and intelligence,
+and were closely associated with the goddess Bastet,
+who represented home, protection, fertility, and family.
+
+To many Egyptians, cats were symbols of good fortune
+and deserved kindness and respect.
+
+</p>
+
+</div>
+
+<!-- Medieval Europe -->
+
+<div class="timeline-item">
+
+<h3>🌙 Medieval Europe</h3>
+
+<p>
+
+During the Middle Ages, people's views of cats began to change.
+
+Because cats were active at night,
+moved quietly,
+and seemed mysterious,
+they became connected with superstition and folklore.
+
+Black cats especially became symbols of mystery,
+although many communities still appreciated them
+for protecting food supplies from mice and rats.
+
+</p>
+
+</div>
+
+<!-- Familiars -->
+
+<div class="timeline-item">
+
+<h3>🐈 Familiars</h3>
+
+<p>
+
+In European folklore,
+many people believed witches had animal companions called
+<strong>familiars</strong>.
+
+Cats were among the animals most often mentioned because of
+their intelligence,
+their independence,
+and their mysterious nighttime behavior.
+
+According to legend,
+familiars offered companionship,
+guidance,
+or protection.
+
+Modern historians understand these stories as folklore
+and superstition rather than established historical fact.
+
+</p>
+
+</div>
+
+<!-- Witch Trials -->
+
+<div class="timeline-item">
+
+<h3>⚖️ The Witch Trials</h3>
+
+<p>
+
+During the witch trials of the 16th and 17th centuries,
+fear and superstition caused many innocent people to be accused of witchcraft.
+
+Because cats had become linked with witches in popular belief,
+they were sometimes feared or mistreated as well.
+
+Today these events are remembered as tragic examples
+of how fear and misinformation can affect entire communities.
+
+</p>
+
+</div>
+
+<!-- Today -->
+
+<div class="timeline-item">
+
+<h3>✨ Cats Today</h3>
+
+<p>
+
+Today,
+cats are celebrated around the world as beloved companions.
+
+Some modern Pagan and Wiccan traditions appreciate cats as
+symbols of intuition,
+wisdom,
+independence,
+and protection.
+
+For most cat lovers,
+however,
+the real magic isn't found in legends—
+it's found in everyday life,
+through quiet companionship,
+comfort,
+and unconditional affection.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- Transition -->
+<!-- ========================================= -->
+
+<section class="fade">
+
+<div class="container">
+
+<div class="love-card">
+
+<p class="quote">
+
+"Legends tell us that cats walked beside witches.
+
+History tells us they walked beside people.
+
+My own story tells me they simply walk beside the ones they love."
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ========================================= -->
+<!-- The Magic Isn't a Myth -->
+<!-- ========================================= -->
+
+<section id="love" class="love fade">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>❤️ The Magic Isn't a Myth</h2>
+
+<p>
+Why I Love Cats
+</p>
+
+</div>
+
+<div class="love-card">
+
+<p>
+
+Throughout history, people believed cats possessed magical abilities.
+Some thought they protected homes from evil spirits.
+Others believed they walked beside witches as loyal companions,
+guardians, or mysterious familiars.
+
+Today we recognize many of these stories as folklore,
+yet anyone who has shared a home with a cat understands
+why these legends have endured for centuries.
+
+</p>
+
+<p>
+
+Cats have a way of making every day a little brighter.
+They can be playful one moment and peacefully asleep the next,
+always finding new ways to make me smile.
+
+Each of my cats has a unique personality,
+and together they have filled my home with warmth,
+comfort, laughter, and countless unforgettable memories.
+
+</p>
+
+<p>
+
+Mr. Handsom reminds me to slow down and appreciate the quiet moments.
+
+Jackie keeps life exciting with endless curiosity,
+funny poses,
+and an unmistakable tuxedo charm.
+
+Tennessee has a calming presence that somehow makes every room
+feel a little more peaceful simply by being there.
+
+</p>
+
+<p>
+
+Living with cats has taught me that companionship doesn't always need words.
+Sometimes it's a quiet purr while reading a book,
+a gentle head bump after a long day,
+or tiny paws following you from room to room.
+
+Those simple moments are what make them so extraordinary.
+
+</p>
+
+<p>
+
+People once searched for magic in legends.
+
+I found mine in three wonderful cats.
+
+Mr. Handsom.
+
+Jackie.
+
+Tennessee.
+
+They're more than pets.
+
+They're family.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- Footer -->
+<!-- ========================================= -->
+
+<footer>
+
+<p class="quote">
+
+"There is no place like home...
+especially when it's filled with purrs."
+
+</p>
+
+<br>
+
+<p>
+
+🐾
+
+</p>
+
+<p>
+
+Created with love for
+
+<strong>Mr. Handsom</strong>,
+<strong>Jackie</strong>,
+and
+<strong>Tennessee</strong>
+
+</p>
+
+<p>
+
+Whiskers & Witchcraft © 2026
+
+</p>
+
+</footer>
+
+<!-- ========================================= -->
+<!-- JavaScript -->
+<!-- ========================================= -->
+
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".fade").forEach(section=>{
+
+observer.observe(section);
+
+});
+
+</script>
+
+</body>
+
+</html>
